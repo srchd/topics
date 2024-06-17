@@ -358,6 +358,37 @@ These training methods and applications demonstrate the versatility and adaptabi
 
 Vision Transformers offer a versatile framework for various computer vision tasks beyond image classification, including object detection, segmentation, and mesh modeling. By exploring innovative training methods like distillation, masked modeling, and contrastive learning, ViT models can be adapted to a wide range of applications, showcasing their flexibility and scalability in vision tasks.
 
+
+### Training Methods of Vision Transformers (ViT-s) and Their Applications
+
+#### Distillation:
+- **Training Goal**: Transfer knowledge from a complex teacher model to a smaller student model. It aims to distill the teacher's knowledge into the student model to improve performance.
+- **Loss Function**: Typically involves a combination of distillation loss and possibly other task-specific losses.
+
+#### Self-Distillation:
+- **Training Goal**: Utilize the student model as its own teacher to improve its performance. This method leverages ensemble techniques by using the student model to generate pseudo-labels for itself.
+- **Loss Function**: Comprises self-distillation loss and potentially other auxiliary losses.
+
+#### Masked Image Modeling:
+- **Training Goal**: Enhance the model's ability to focus on relevant image regions by masking parts of the input image. This helps the model learn to predict missing or occluded information.
+- **Loss Function**: Involves reconstruction loss from the masked regions and possibly additional task-specific losses.
+
+#### Contrastive Captioners:
+- **Training Goal**: Combine contrastive learning with captioning tasks to learn semantically meaningful representations from image-text pairs. It aims to align representations of images and captions in a shared embedding space.
+- **Loss Function**: Typically includes contrastive loss that compares the embeddings of image-caption pairs.
+
+#### Object Detection with Full-Stack Transformers:
+- **Role of Learned Queries in the Decoder**: Learned queries in the decoder enable the model to query specific regions of the input features, aiding in object detection by attending to relevant parts of the image.
+
+#### Segmentation with ViT-like Transformers:
+- **Ways of Decoding ViT Representations**: Decoding ViT representations for segmentation tasks can involve post-processing steps like upsampling, applying convolutional layers, or using transposed convolutions to generate pixel-wise segmentation masks.
+
+#### Mesh Modeling with Vision Transformers:
+- **Training with Masked Modeling**: To train vision transformers for mesh modeling, masked modeling techniques can be employed where parts of the mesh input are masked out to predict missing information, allowing the model to understand 3D structures and relationships.
+
+By exploring various training methods such as distillation, self-distillation, masked modeling, and contrastive learning, Vision Transformers can be adapted to a wide range of applications including object detection, segmentation, and mesh modeling, showcasing their versatility and effectiveness in diverse computer vision tasks.
+
+
 I'll provide an explanation for each point in your request:
 
 - **Spiking Neural Networks**:
